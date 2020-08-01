@@ -1,0 +1,83 @@
+body{
+  background-image: linear-gradient(#3C4AA3, #3887B0);
+  margin-top: 7rem;
+}
+@keyframes start {
+    20%{color: #2411A6;}
+    40%{color: rgb(57, 57, 255);}
+    60%{color: rgb(245, 212, 1);}
+    100%{color: rgb(243, 255, 68);}
+  }
+  #flexcontainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation-name: fadeOutDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #flexcontainer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation-name: fadeOutUp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #discoazul{
+    visibility: visible;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #2411A6;
+  }
+  #discoamarelo{
+    margin-bottom: 0;
+    visibility: visible;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color:  rgb(245, 212, 1);
+  }
+#entrada{
+    visibility: visible;
+    text-align: center;
+    display: block;
+    font-size: 10rem;
+    font-family: 'Poller One', cursive;
+    color: rgb(245, 212, 1);
+    text-shadow: 0 1px 0 #CCCCCC,
+    0 2px 0 #C9C9C9, 0 3px 0 #BBBBBB,
+    0 4px 0 #B9B9B9, 0 5px 0 #AAAAAA,
+    0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+#regras{
+    margin-top: 15rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Poller One', cursive;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    text-shadow: 1px 3px 2px black;
+  }
+  #start{
+    width: 200px;
+    visibility: visible;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-iteration-count: infinite
+  }
+  a{
+    text-decoration: none;
+    font-size:100px;
+  }

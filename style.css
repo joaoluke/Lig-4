@@ -1,0 +1,116 @@
+
+body{
+  font-family: 'Poller One', cursive;
+  background-image: linear-gradient(#3C4AA3, #3887B0);
+}
+
+#principal{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center {
+  font-size: 3.5rem;
+  margin-right: 2rem;
+  font-weight: bold;
+  text-align: right;
+  text-shadow: 2px 2px black;
+  color: rgb(245, 212, 1);
+  text-transform: uppercase;
+}
+
+.right-text {
+  text-align: center;
+  font-size: 20px;
+  color: #F0EA41;
+  font-weight: lighter;
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Poller One', cursive;
+}
+
+.myButton{
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 15rem;
+}
+.myButton button{
+  font-family: 'Poller One', cursive;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+
+/* ////////////DOM ////////////////// */
+#global {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 420px;
+}
+.coluna {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+  background-color: #F0E2D1;
+  height: 325px;
+  width: 100px;
+  transform: rotate(180deg);    /* para funcionar a animação */
+}
+
+.coluna:hover{
+  background-color: rgb(217, 231, 245);
+}
+
+.jogador1{
+  position: relative;
+  width: 51px;
+  height: 51px;
+  border: 1px solid rgb(151, 133, 11);
+  border-radius: 30px;
+  background-color: rgb(245, 212, 1);
+  animation: anima1 1s ease-in;
+}
+@keyframes anima1{
+  from{top: 200px;}
+  to{top: 0px;}
+}
+  .jogador2{
+    position: relative;
+    width: 51px;
+    height: 51px;
+    border: 1px solid rgb(245, 212, 1);
+    border-radius: 30px;
+    background-color: #2411A6;
+    animation: anima1 1s ease-in;
+  }
+
+  /*PARAMETROS DA ANIMAÇÃO DE VITORIA */
+
+  @keyframes vitoria {
+    0%{color: #2411A6;}
+    40%{color: rgb(57, 57, 255);}
+    80% {color: rgb(245, 212, 1);}
+    100%{color: #2411A6;} 
+  }
+
+  #resultado{
+    padding: 1rem;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    color: #2411A6;
+    font-size: 2.5rem;
+    font-family: 'Poller One', cursive;
+    animation-name: vitoria;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+ 

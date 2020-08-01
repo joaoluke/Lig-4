@@ -1,0 +1,9 @@
+1. Fran: mensagem de vitoria (animacao, imagens..)
+2. João: trabalhar junto com Alan e testar jogo.
+3. Cris: trabalhar junto com a Fran (HTML e CSS)
+4. Alan: condição para que não sejam adicionados mais discos após o lig-4 ser encontrado e mencionar qual foi o jogador que venceu - OK
+
+- arrumar disposicao dos elementos da pagina no HTML e CSS
+- criar condição para o empate (não houve match) -OK
+- criar condição para mostrar qual jogador venceu e não adicionar mais discos após a vitória - OK
+- jogar o nosso jogo para testar se esta tudo ok mesmo
